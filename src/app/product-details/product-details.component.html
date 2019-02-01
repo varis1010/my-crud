@@ -1,0 +1,14 @@
+<div *ngIf="product">
+    <div>
+        <div><span>id: </span>{{product.id}}</div>
+        <label>Name:
+          <input [(ngModel)]="product.name" placeholder="name">
+        </label><br>
+        <label>color:
+            <input [(ngModel)]="product.color" placeholder="color">
+          </label>
+      </div>
+
+      <button class="btn btn-success" (click)='goBack()'>Update</button>
+      <Button routerLink="/" class="btn btn-defult" >Back</Button>
+</div>
